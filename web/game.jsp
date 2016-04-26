@@ -135,9 +135,9 @@
                         }
                     }
                     if (leftOrRight == 1) {
-                        $tblAliens.css('left', (pos.left + 100) + "px");
+                        $tblAliens.css('left', (pos.left + 10) + "px");
                     } else {
-                        $tblAliens.css('left', (pos.left - 100) + "px");
+                        $tblAliens.css('left', (pos.left - 10) + "px");
                     }
                 }
 
