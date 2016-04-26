@@ -22,6 +22,7 @@ public class User {
 		try{
 			ResultSet rs = db.getResultSet(sql);
 			if(rs.next()){
+                                this.userID = rs.getInt("userID");
 				this.setEmail(rs.getString("email"));
 				this.setFirstName(rs.getString("firstName"));
 				this.setLastName(rs.getString("lastName"));
@@ -107,6 +108,10 @@ public class User {
 		}
 		
 	}
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
 	/**
 	 * Update the user entry on the database using the current class properties.
 	 */

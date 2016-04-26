@@ -19,7 +19,7 @@
                     user = new User(userName, password);
                     if (user.isLoggedIn()) {
                         //redirect to game.jsp
-                        response.sendRedirect("game.jsp");
+                        response.sendRedirect("game.jsp?userID="+user.getUserID());
                     } else {
                         out.print("<script>alert('Invalid email or password')</script>");
                     }
